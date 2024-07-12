@@ -1,0 +1,32 @@
+.container {
+    margin: 10px 350px;
+    text-align: center;
+    border: 1px solid #71a5e9;
+    border-radius: 30px;
+    color: #990c81;
+    padding: 10px;
+}
+
+h3 {
+    color: #090b92;
+}
+
+a {
+    color: #090b92;
+    cursor: pointer;
+    font-size: 12px;
+    text-decoration: underline;
+    font-weight: 500;
+
+}
+
+a:hover {
+    color: #5557db;
+    font-size: 15px;
+
+}
+
+.backtogo {
+    display: flex;
+    justify-content: space-around;
+}

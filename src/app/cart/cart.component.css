@@ -1,0 +1,121 @@
+.table {
+    display: inline-table;
+    width: 350px;
+    border: 5px solid #ffffff;
+    background: #cfdfcf;
+
+}
+
+.product-filter {
+    margin: 10px;
+    padding: 5px 90px 5px 5px;
+    border: 2px solid #c0c0f0;
+    border-radius: 20px;
+}
+
+.getCartTable {
+    color: #ffffff;
+    padding: 0;
+    margin: 5px;
+    font-size: 12px;
+    border: 2px solid #024b2f;
+    border-radius: 15px;
+    width: 900px;
+}
+.get-cart{
+    color: #09098f;
+    margin: 0px;
+}
+
+.getCartTable th {
+    background: #740545;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.topoftable {
+    display: flex;
+    justify-content: space-between;
+}
+
+th {
+    border: 2px solid #ffffff;
+
+    margin: 0;
+}
+
+.btn-group {
+    margin-top: 3px;
+}
+
+
+.cart-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 45px;
+}
+
+.faCartPlus {
+    font-size: 25px;
+    color: #024b2f;
+}
+
+.table td {
+    border: 10px solid #ffffff;
+    padding: 0;
+    margin: 0;
+    background: #ffffff;
+}
+
+.listofProducts {
+    border: 2px solid #4e054e;
+}
+
+
+.number-of-cart {
+    width: 350px;
+    font-size: 25px;
+    font-weight: 600;
+    display: flex;
+    color: #740545;
+}
+
+.nocart {
+    font-size: 15px;
+    color: #09098f;
+    font-weight: 700;
+}
+
+.nocart span {
+    font-size: 17px;
+    color: #740545;
+    font-weight: 900;
+}
+
+h1 {
+    margin: 0;
+    color: #ffffff;
+    background: #860450;
+}
+
+.product-list {
+    background: #fcf2f9;
+    color: #860450;
+    padding: 5px 10px;
+    font-size: 15px;
+    font-weight: 900;
+    border-radius: 30px;
+}
+
+.btn-placed,
+.btn-delete {
+    margin: 5px 5px;
+    padding: 5px 50px;
+    border: 5px solid #e2147b;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 900;
+    border-radius: 15px;
+    cursor: pointer;
+    background: #024937;
+}

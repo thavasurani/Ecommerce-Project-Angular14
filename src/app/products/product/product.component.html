@@ -1,0 +1,77 @@
+<div class="container">
+
+    <table class="table">
+
+        <thead>
+            <th>ID</th>
+            <th>GSM</th>
+            <th>PRODUCTS</th>
+            <th colspan="2">DETAILS</th>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td class="product-id">{{product.id}}</td>
+
+                <td>{{product.gsm}}</td>
+                <td><img [src]="product.image" width="200" height="250" alt="img" class="img-out" /></td>
+                <table class="products-details">
+                    <tr>
+                        <td>Product Name: </td>
+                        <td>{{product.products}}</td>
+                    </tr>
+                    <tr>
+                        <td>GSM: </td>
+                        <td>{{product.gsm}}</td>
+                    </tr>
+                    <tr>
+                        <td>Usage/Application: </td>
+                        <td>{{product.usage}}</td>
+                    </tr>
+                    <tr>
+                        <td>In Stocks: </td>
+                        <td>{{product.stocks}}</td>
+                    </tr>
+                    <tr>
+                        <td>Price: </td>
+                        <td>{{product.price | currency: 'INR'}} </td>
+                    </tr>
+                    <tr>
+                        <td>Quantity: </td>
+                        <td>{{product.quantity}}</td>
+                    </tr>
+                    <tr>
+                        <td>Bundle: </td>
+                        <td>{{product.bundle | currency: 'INR'}}</td>
+                    </tr>
+                    <tr>
+                        <td>Product is Available: </td>
+                        <td>{{product.available}}</td>
+                    </tr>
+                    <tr>
+                        <td>Capacity: </td>
+                        <td>{{product.capacity}}</td>
+                    </tr>
+                    <tr>
+                        <td>Size: </td>
+                        <td>{{product.size}}</td>
+                    </tr>
+                    <tr>
+                        <td>Colour: </td>
+                        <td>{{product.color}}</td>
+                    </tr>
+
+                </table>
+                <button *ngIf="!isInCart" class="btn" (click)="addToCart()">Add to Cart
+
+                </button>
+                <button *ngIf="isInCart" class="btn" (click)="removeFromCart()">Remove from Cart</button>
+
+
+            </tr>
+
+        </tbody>
+    </table>
+
+
+</div>

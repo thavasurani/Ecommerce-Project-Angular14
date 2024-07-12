@@ -1,0 +1,63 @@
+<div class="container">
+  <header class="header">
+    <img src="../assets/images/logo.jpg" width="50" alt="logo" />
+    <fa-icon class="faFacebook" [icon]="faFacebook"></fa-icon>
+    <fa-icon class="faInstagram" [icon]="faInstagram"></fa-icon>
+    <fa-icon class="faTwitter" [icon]="faTwitter"></fa-icon>
+    <fa-icon class="faPhone gly-rotate-90" [icon]="faPhone"></fa-icon>
+    <p class="para">+9876543210</p>
+
+    <h2 class="main-head">SHEE SHIV ENTERPRISES - KRAFT PAPER BAGS</h2>
+    <input class="input" type="text" placeholder="Search Products..">
+    <fa-icon class="faSearchengin" [icon]="faSearchengin"></fa-icon>
+    <h3>Sivaganga</h3>
+  </header>
+  <div>
+    <nav class="nav">
+      <a class="link-part" routerLink="/">HOME</a>
+      <a class="link-part" routerLink="/our-products">OUR PRODUCTS</a>
+      <a class="link-part" routerLink="/about">ABOUT US</a>
+      <a class="link-part" routerLink="/contact">CONTACT US</a>
+     <ng-container *ngIf="!isAuthenticated()">
+      <a class="link-part" routerLink="/login">LOGIN</a>
+     </ng-container>
+     <ng-container *ngIf="isAuthenticated()">
+      <button>Logout</button>
+     </ng-container>
+     
+
+      <a class="link-part" routerLink="/register">REGISTER</a>
+      <a class="link-part" routerLink="/cart">MY CART&nbsp;
+
+        <fa-icon class="faCartPlus" [icon]="faCartPlus"></fa-icon>
+        <p class="get-cart">{{getCart().length}}</p>
+
+      </a>
+      <a class="link-part" routerLink="/checkout">CHECKOUT</a>
+
+    </nav>
+  </div>
+  <div class="bags">
+    <img src="../assets/images/bags5.jpg" width="100" alt="bags" />
+    <img src="../assets/images/bags.jpg" width="100" alt="bags1" />
+    <img src="../assets/images/bags3.jpg" width="100" alt="bags1" />
+    <img src="../assets/images/bags6.jpg" width="100" alt="bags1" />
+    <img src="../assets/images/bags7.jpg" width="100" alt="bags1" />
+    <img src="../assets/images/bags8.jpg" width="100" alt="bags1" />
+    <img src="../assets/images/bags9.jpg" width="100" alt="bags1" />
+    <img src="../assets/images/bags1.jpg" width="100" alt="bags1" />
+    <img src="../assets/images/bags2.jpg" width="100" alt="bags1" />
+
+  </div>
+
+  <section>
+    <div class="section">
+      <h1>Exclusive Range of Carry Bags </h1>
+
+      <button class="btn-enquire" routerLink="../products/product">Enquire Now</button>
+    </div>
+  </section>
+
+</div>
+<router-outlet></router-outlet>
+

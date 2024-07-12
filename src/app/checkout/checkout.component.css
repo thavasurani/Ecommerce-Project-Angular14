@@ -1,0 +1,124 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.table {
+    width: 450px;
+    height: 500px;
+    border: none;
+    margin: 0 200px;
+    background: #5d5e5f;
+    border-radius: 20px;
+    box-shadow: 5px 15px 15px 15px #ccced1;
+}
+
+h2 {
+    color: #3f3e3e;
+    margin: 10px 250px 20px 250px;
+}
+
+.paynow {
+    font-size: 30px;
+    color: #050549;
+
+}
+
+hr {
+    margin: 0;
+}
+
+th {
+    background: #ffffff;
+}
+
+.btn {
+    background: #ecf0f1;
+    cursor: pointer;
+    padding: 20px 0;
+}
+
+button {
+    background: #e7e303;
+    padding: 10px 70px;
+    border: #868550;
+    margin: 0 100px;
+    cursor: pointer;
+}
+
+P {
+    padding: 0;
+    font-weight: 900;
+    margin: 0 110px;
+}
+
+.debit {
+    background: #f5f1f1;
+    color: blue;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    margin: 10px 20px;
+    padding: 30px 20px;
+    width: 700px;
+}
+
+.gpay {
+    color: blue;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 10px 20px;
+    padding: 30px 20px;
+    background: #eef4f7;
+    cursor: pointer;
+    width: 700px;
+}
+
+.paytm {
+    color: blue;
+    font-weight: 700;
+    margin: 10px 20px;
+    padding: 30px 20px;
+    font-size: 15px;
+    background: #eef4f7;
+    cursor: pointer;
+    width: 700px;
+}
+
+.paytm span {
+    color: #02023f;
+    cursor: pointer;
+}
+
+.cash {
+    color: #3f3e3e;
+    font-weight: 900;
+    background: #eef4f7;
+    margin: 10px 20px;
+    padding: 30px 20px;
+    cursor: pointer;
+    width: 700px;
+}
+
+.gpay span {
+    color: #a7078c;
+    cursor: pointer;
+}
+
+.gpay {
+    background: #eef4f7;
+    color: #02023f;
+    cursor: pointer;
+    width: 700px;
+}
+
+.payment {
+    background: #050549;
+    color: #ffffff;
+    padding: 10px;
+    margin: 5px 150px;
+    border: 1px solid #a7078c;
+}
+.payment:hover{
+    background: #1d1d96;
+}

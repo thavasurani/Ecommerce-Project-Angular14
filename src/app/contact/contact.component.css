@@ -1,0 +1,58 @@
+.container {
+    display: flex;
+}
+
+h3 {
+    margin: 0 45px;
+    color: #580446;
+    font-weight: 800;
+    font-size: 22px;
+}
+
+address {
+    margin: 10px 45px;
+    color: rgb(2, 2, 97);
+    font-weight: 500;
+    font-size: 15px;
+    padding: 5px 0 20px 0;
+}
+
+p {
+    margin: 10px 45px;
+    color: rgb(2, 2, 97);
+    font-weight: 500;
+    font-size: 15px;
+}
+
+a {
+    margin: 10px 0px;
+    color: #020261;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+input {
+    margin: 0px 45px;
+    border: 2px solid #9898c4;
+    padding: 5px;
+}
+
+textarea {
+    margin: 0px 45px;
+    border: 2px solid #9898c4;
+    padding: 15px 45px;
+
+}
+
+button {
+    margin: 10px 45px;
+    border: 1px solid #580446;
+    padding: 7px;
+    border-radius: 10px;
+    background: #580446;
+    color: #ffffff;
+}
+
+.textarea {
+    padding: auto;
+}

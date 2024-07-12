@@ -1,0 +1,62 @@
+<div class="container">
+    <table class="table">
+        <thead>
+            <th>
+                <h1>Your Cart</h1>
+            </th>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="number-of-cart">Number of Cart:
+
+                    <fa-icon class="faCartPlus" [icon]="faCartPlus"></fa-icon>
+                    <p class="get-cart">{{getCart().length}}</p>
+
+
+                </td>
+
+            </tr>
+            <tr>
+                <td class="nocart" *ngIf= "getCart().length == 0">No product in your cart - <span>Select the
+                        Product</span></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="cart-container">
+        <div>
+            <div class="topoftable">
+                <div> <input type="text" name="name" placeholder="Product Name" [(ngModel)]="productFilter.products"
+                        class="product-filter" /></div>
+
+                <!-- <div><button class="btn-placed" routerLink="../place-the-product">Place the Order</button></div> -->
+                <div><button class="btn-placed" routerLink="../customer-add">Place the Order</button></div>
+            </div>
+            <table class="getCartTable">
+                <tr>
+                    <th (click)="sort('id')">Id <i class="fa fa-sort"></i></th>
+                    <th (click)="sort('products')">Name of the Product <i class="fa fa-sort"></i></th>
+                    <th>Product</th>
+                    <th (click)="sort('gsm')">GSM <i class="fa fa-sort"></i></th>
+                    <th (click)="sort('price')">Bundle of cost <i class="fa fa-sort"></i></th>
+
+                    <th>Action</th>
+                </tr>
+                <tr
+                    *ngFor="let product of getCart() | filterBy: productFilter.products |orderBy: orderHeader: isDescOrder">
+
+
+                    <td class="product-list"> {{product.id}} </td>
+                    <td class="product-list"> {{product.products}} </td>
+                    <td class="product-list"> <img [src]="product.image" width="200" height="250" alt="img"
+                            class="img-out" /> </td>
+                    <td class="product-list"> {{product.gsm}} </td>
+                    <td class="product-list"> {{product.bundle | currency: 'INR'}} </td>
+
+
+                    <td><button class="btn-delete" (click)="deleteFromCart(product)">Delete</button></td>
+
+                </tr>
+
+            </table>
+        </div>

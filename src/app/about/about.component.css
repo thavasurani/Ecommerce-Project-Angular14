@@ -1,0 +1,55 @@
+.container {
+    margin: 0 45px;
+}
+
+h1 {
+
+    color: #740843;
+}
+
+p {
+    color: blue;
+    font-size: 18px;
+}
+
+img {
+    margin: 20px;
+}
+
+h2 {
+    margin: 0 20px;
+    color: #740843;
+}
+
+.information {
+    border: 1px solid #f5ddea;
+    width: 500px;
+    margin: 20px;
+    padding: 25px;
+    height: 300px;
+}
+
+th {
+    text-align: left;
+    color: blue;
+    font-size: 18px;
+}
+
+td {
+    color: #740843;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.statutory {
+    width: 500px;
+    height: 200px;
+    border: 1px solid #f5ddea;
+    margin: 0 20px;
+}
+
+h4 {
+    color: blue;
+    font-size: 18px;
+    margin: 0px;
+}

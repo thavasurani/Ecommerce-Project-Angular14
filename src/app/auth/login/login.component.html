@@ -1,0 +1,45 @@
+<div class="login">
+
+    <form (ngSubmit)="submit()" #myForm="ngForm" class="form-box">
+        <h1 class="header">Login</h1>
+
+        <div class="fill-box">
+            <label for="email">Email</label>
+            <input type="email" id="email" class="input-form" placeholder="Emai Address" [(ngModel)]="form.email"
+                name="email" #email="ngModel" required />
+        </div>
+
+        <div *ngIf="email.invalid && (email.dirty || email.touched)" class="emailValid">
+            Email field must be valid
+        </div>
+
+        <div class="fill-box">
+            <label for="password">password</label>
+            <input type="password" id="password" class="input-form" placeholder="password" [(ngModel)]="form.password"
+                name="password" #password="ngModel" required />
+        </div>
+
+        <div *ngIf="password.invalid && (password.dirty || password.touched)" class="passwordValid">
+            Password field must be valid
+        </div>
+
+        <div class="fill-box">
+            <!-- <input type="submit" [disabled]="myForm.form.invalid" class="submit" /> -->
+<button type="submit" [disabled]="myForm.form.invalid" class="submit" >
+<ng-container *ngIf="isLoading()">
+Loading...
+    </ng-container>
+
+    <ng-container *ngIf="!isLoading()">
+        Submit
+    </ng-container>
+    
+    
+</button>
+
+
+
+            <a class="forget" routerLink="../reset-password">Forget password</a>
+        </div>
+    </form>
+</div>

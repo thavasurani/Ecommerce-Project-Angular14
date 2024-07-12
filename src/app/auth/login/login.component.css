@@ -1,0 +1,70 @@
+.login {
+    margin: 0 250px;
+    border: 1px solid #f5ddef;
+    border-radius: 15px;
+    width: 300px;
+    height: 270px;
+    background: #f5ddef;
+}
+
+.form-box {
+    padding: 4px;
+    color: #61044a;
+}
+
+label {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.fill-box {
+    margin: 5px;
+
+}
+
+.header {
+    text-align: center;
+    margin: 0;
+}
+
+.input-form {
+    padding: 2px;
+    width: 250px;
+    border: 2px solid #7e0b5b;
+    border-radius: 5px;
+}
+
+.submit {
+    padding: 10px;
+    margin-top: 10px;
+    background: #61044a;
+    color: #ffffff;
+    font-size: 15px;
+    border: 1px solid #61044a;
+    border-radius: 15px;
+    cursor: pointer;
+
+}
+
+.submit:hover {
+    background: #9b3381;
+}
+
+.emailValid,
+.passwordValid {
+    padding: 2px;
+    background: #f06060;
+    color: #700707;
+    border: 1px solid #f06060;
+    margin: 0 30px 0 5px;
+}
+
+a {
+    text-decoration: underline;
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+a:hover {
+    color: blue;
+}

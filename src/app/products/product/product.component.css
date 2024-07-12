@@ -1,0 +1,64 @@
+.container {
+    margin: 20px 50px;
+}
+
+.table {
+    height: 300px;
+    width: 750px;
+    margin: 0 50px;
+    border: 3px solid #4d0235;
+    border-radius: 10px;
+
+}
+
+img {
+    align-items: center;
+}
+
+img:hover {
+    width: 250px;
+    height: 300px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #a3497d;
+}
+
+th {
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+thead {
+    background: #4d0235;
+    color: #ffffff;
+
+
+}
+
+tbody {
+
+    background: #fcf2f9;
+
+    color: #360321;
+    font-weight: 900;
+}
+
+.products-details {
+
+    margin: 40px 50px;
+}
+
+.btn {
+    margin: 10px 125px;
+    padding: 5px 30px;
+    border: 1px solid #860450;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 15px;
+    cursor: pointer;
+    background: #860450;
+}

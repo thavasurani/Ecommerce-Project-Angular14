@@ -1,0 +1,22 @@
+h2 {
+    border: 2px solid #a00987;
+    background: #a01064;
+    color: #ffffff;
+    border-radius: 15px;
+    padding: 5px 10px;
+
+}
+
+.page-change {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+    padding: 5px 0;
+}
+
+.head-checkout {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 100px;
+}
